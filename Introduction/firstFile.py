@@ -41,7 +41,16 @@ print(False)
 print(a)
 print(type(old))
 print(type(a))
+"""
+keywords - are the reserved words, we can't use them as variable name. 
+Python is case sensitive - capital and small letters are treated as differently
+SQl is not a case sensitive language.
 
-#keywords - are the reserved words, we can't use them as variable name. 
-# Python is case sensitive - capital and small letters are treated as differently
-# SQl is not a case sensitive language.
+"""
+# Multiline comments
+# printing the sum of two numbers
+a = 200
+b = 50.50
+sum = a-b
+print("Sum =",sum)
+print(type(sum))
