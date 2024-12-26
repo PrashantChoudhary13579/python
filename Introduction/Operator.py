@@ -38,6 +38,6 @@ print(not (a>b)) # False
 val1 = True
 val2 = True
 print("and operator: ", not val1 and val2)
-print("and operator: ", not val1 or val2)
-print("and operator: ", not val1 or not val2)
+print("or operator: ", not val1 or val2)
+print("or operator: ", not val1 or not val2)
 print("answer is : ", (a==b) or (a>b))

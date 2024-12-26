@@ -51,6 +51,6 @@ SQl is not a case sensitive language.
 # printing the sum of two numbers
 a = 200
 b = 50.50
-sum = a-b
+sum = a+b
 print("Sum =",sum)
 print(type(sum))
