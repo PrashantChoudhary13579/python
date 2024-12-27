@@ -23,3 +23,16 @@ print(list)
 # If we have to insert the element at a particular index
 list.insert(2,'prashant')
 print(list)
+
+# remove method removes the first occurrence of element
+star = [2,3,2,1,3]
+star.remove(3)
+star.remove(1)
+print(star)
+
+#pop method is used to remove the element at any index 
+star.pop(1)
+print(star)
+star.pop(1)
+print(star)
+
