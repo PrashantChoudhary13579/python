@@ -6,7 +6,7 @@ student ={
         "Chemistry":95,
         "Physics":95,
         "Maths":99
-    },
+        },
     "class" : 12,
     "school" : "Gita Niketan Awasiya Vidhyalay"
 }
