@@ -21,3 +21,11 @@ val = range(10)
 # printing all the even number
 for i in range(0,100,2):
     print(i)
+
+for i in range(5):
+    pass  # used when we do not want to use the loop or we want to use the loop in future
+
+if i > 15:
+    pass
+
+print ("Some work done by me ")
