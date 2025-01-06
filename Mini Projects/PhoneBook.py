@@ -17,24 +17,45 @@ index ={
     5 : "Exit"
 
 }
+value = str(input("What to open phonebook ? (Yes/No)"))
 
-print("What action do you want to perform ?")
-print(" 1 : Add \n 2 : Search\n 3 : Delete\n 4 : Display all\n 5 : Exit")
+while (str == "Yes"):
+    print("What action do you want to perform ?")
+    print(" 1 : Add \n 2 : Search\n 3 : Delete\n 4 : Display all\n 5 : Exit")
 
-action_1 = input("Enter the number ")
+    action_1 = int(input("Enter the number "))
+    print(type(action_1))
 
-if action_1 in index:
-    if action_1 == 1:
-        name = str(input("Enter the name of the contact"))
-        phoneNo  = int(input("Enter the phone number "))
-        # new_Value = {"{name}": "{phoneNo}"}
-        # contacts.update(new_Value)
-        contacts.update({"name" : "phoneNo"})
-    elif action_1 == 2:
-        name = str(input("Enter the name of the contact"))
-        phoneNo  = int(input("Enter the phone number "))
-        new_Value = {"{name}": "{phoneNo}"}
-        # for
+    if action_1 in index:
+        if action_1 == 1:
+            name = str(input("Enter the name of the contact"))
+            phoneNo  = int(input("Enter the phone number "))
+            if name in contacts:
+                print(f"Sorry, Contact already exist.")
+            else:
+                contacts.update({"name" : "phoneNo"})
+                
+        elif action_1 == 2:
+            name = str(input("Enter the name of the contact"))
+            if name in contacts:
+                phoneNo  = int(input("Enter the phone number "))
+                print(f"Contact Name: '{name}' and Contact's Phone number: '{phoneNo}'")
+            # new_Value = {"{name}": "{phoneNo}"}
+            else:
+                print("Sorry, Contact was not found.")
+        
+        elif action_1 == 3:
+            name = str(input("Enter the name of the contact"))
+       
+        elif action_1 == 4:
+            print("Displaying all the contacts available")
+
+        elif action_1 == 5:
+            print("Exiting from the system")
+
     
-else:
-    print("Sorry, Please select the task among the following")
+    else:
+        print("Sorry, Please select the task among the following")
+
+print(contacts)
+
